@@ -1,0 +1,4 @@
+kind: K3s
+apiVersion: k3s.ibtc.io/v1
+metadata:
+  name: k3s

@@ -1,0 +1,4 @@
+image:
+  repository: ibuildthecloud/k3s-operator
+  tag: latest
+  imagePullPolicy: Always

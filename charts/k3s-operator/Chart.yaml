@@ -1,0 +1,8 @@
+apiVersion: v2
+name: k3s-operator
+description: Stupid simple operator to create internal k3s clusters for testing
+version: 0.0.0
+appVersion: 0.0.0
+annotations:
+  catalog.cattle.io/namespace: k3s-system
+  catalog.cattle.io/release-name: k3s-operator

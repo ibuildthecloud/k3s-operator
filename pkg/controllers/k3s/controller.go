@@ -336,7 +336,7 @@ func (c *handler) getSecrets(k3s *v1.K3s) (*corev1.Secret, *corev1.Secret, error
 		return nil, nil, err
 	}
 
-	clientCert, clientKey, err := tlsstorage.LoadOrGenClient(c.secrets, k3s.Namespace, clientName, "admin", ca, caKey)
+	clientCert, clientKey, err := tlsstorage.LoadOrGenClient(c.secrets, k3s.Namespace, clientName, "system:admin,o=system:masters", ca, caKey)
 	if err != nil {
 		return nil, nil, err
 	}

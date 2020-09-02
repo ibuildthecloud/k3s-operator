@@ -12,8 +12,6 @@ spec:
     type: string
   group: k3s.ibtc.io
   names:
-    categories:
-    - fleet
     kind: K3s
     plural: k3ses
   scope: Namespaced

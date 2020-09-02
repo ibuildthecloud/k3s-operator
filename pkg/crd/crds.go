@@ -57,7 +57,6 @@ func List() []crd.CRD {
 	return []crd.CRD{
 		newCRD(&v1.K3s{}, func(c crd.CRD) crd.CRD {
 			return c.
-				WithCategories("fleet").
 				WithColumn("Ready", ".status.ready").
 				WithColumn("Kubeconfig", ".status.clientSecretName")
 		}),
